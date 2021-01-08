@@ -349,10 +349,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="Model\Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <EntityDeploy Include="Model\dataluong.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>dataluong.Designer.cs</LastGenOutput>
@@ -366,9 +362,6 @@
     </EntityDeploy>
     <None Include="Model\local.edmx.diagram">
       <DependentUpon>local.edmx</DependentUpon>
-    </None>
-    <None Include="Model\Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
     </None>
     <EntityDeploy Include="Model\sever.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -407,16 +400,6 @@
       <DependentUpon>local.edmx</DependentUpon>
       <LastGenOutput>local.cs</LastGenOutput>
     </Content>
-    <Content Include="Model\Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Model\Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
-    </Content>
     <Content Include="Model\sever.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>sever.edmx</DependentUpon>
@@ -426,6 +409,13 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>sever.edmx</DependentUpon>
       <LastGenOutput>sever.cs</LastGenOutput>
+    </Content>
+    <Content Include="QLNS.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="QLNS_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>QLNS.mdf</DependentUpon>
     </Content>
     <Resource Include="Resources\img\ohno.jpg" />
     <Resource Include="Resources\img\sdg.gif" />
